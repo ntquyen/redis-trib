@@ -9,4 +9,4 @@ RUN apt-get -y update \
   && apt-get -y clean
 WORKDIR /usr/local/bin
 ADD redis-trib.rb /usr/local/bin/redis-trib.rb
-ENTRYPOINT ["/usr/local/bin/redis-trib.rb"]
+CMD ["/usr/local/bin/redis-trib.rb"]
